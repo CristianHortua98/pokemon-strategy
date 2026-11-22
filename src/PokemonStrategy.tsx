@@ -1,4 +1,5 @@
 import { TeamSection } from './components/TeamSection.tsx'
+import { TypeAnalysisSection } from './components/TypeAnalysisSection.tsx'
 import { useTeams } from './hooks/useTeams.ts'
 
 export const PokemonStrategy = () => {
@@ -22,6 +23,7 @@ export const PokemonStrategy = () => {
           setPokemon={setPokemon}
           clearSlot={clearSlot}
         />
+        <TypeAnalysisSection teams={teams} />
       </div>
     </main>
   )
