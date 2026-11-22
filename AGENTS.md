@@ -136,3 +136,41 @@ No Cursor rules (`.cursorrules` or `.cursor/rules/`) and no GitHub Copilot instr
 - For sizable changes, create or follow a spec using the `/spec` skill first.
 - Run `npm run build` and `npm run lint` before considering a task done.
 - Never commit unless explicitly asked.
+
+
+## Project Rules
+
+- Do not push changes directly to the `main` branch.
+- Do not merge branches into `main`.
+- Never execute `git push` without explicit user authorization.
+- Do not create commits unless explicitly requested.
+- Work on a separate feature branch for every new feature or bug fix.
+- Before making changes, inspect the existing project structure and coding conventions.
+- Do not modify files unrelated to the requested task.
+
+## Git Workflow
+
+1. Create a feature branch from the latest development branch.
+2. Implement the requested changes.
+3. Review the modified files.
+4. Run the available linting, tests and build commands.
+5. Report the changes made and any errors found.
+6. Wait for user authorization before pushing or merging changes.
+
+## Development Guidelines
+
+- Use React with TypeScript.
+- Use functional components and React Hooks.
+- Follow the existing project architecture.
+- Use Tailwind CSS for styling.
+- Maintain strict TypeScript typing.
+- Avoid using `any` unless absolutely necessary.
+- Keep components reusable and maintainable.
+
+## Pokémon Application Rules
+
+- The application supports teams of six Pokémon.
+- The opponent's team must allow configuration of moves, items and abilities.
+- The user's team must support Pokémon selection.
+- Recommendations for the user's team must consider the opponent's Pokémon, moves, items and abilities.
+- Do not generate generic recommendations without considering the opponent's team configuration.
